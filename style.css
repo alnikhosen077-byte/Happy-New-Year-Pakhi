@@ -1,6 +1,44 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+  background: linear-gradient(#ff9a9e,#fad0c4);
+  font-family: Arial, sans-serif;
+}
+
+.center{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  color:white;
+}
+
+button{
+  padding:15px 30px;
+  border:none;
+  border-radius:30px;
+  background:#ff4d6d;
+  color:white;
+  font-size:18px;
+  margin-top:25px;
+  cursor:pointer;
+}
+
+h1,h2,p{
+  margin:10px 0;
+}
+
 .hearts::before{
   content:"❤️ 💕 💖 💗 💓";
-  font-size:30px;
+  font-size:28px;
   position:absolute;
   top:20px;
   animation: float 4s infinite;
@@ -18,6 +56,7 @@
 
 .balloons{
   font-size:40px;
+  margin-top:30px;
   animation: rise 5s infinite;
 }
 
